@@ -16,6 +16,7 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
+    <class path="../Firmament.hx/lib" />
     <class path="bin/flash/haxe" />
   </classpaths>
   <!-- Build options -->
@@ -50,7 +51,7 @@
   <options>
     <option showHiddenPaths="False" />
     <option testMovie="Custom" />
-    <option testMovieCommand="nme test application.nmml neko &quot;-D spod_macro&quot;" />
+    <option testMovieCommand="" />
   </options>
   <!-- Plugin storage -->
   <storage />

@@ -29,4 +29,7 @@ class Library
 		return record.libraryPath;
 	}
 	
+	public static function getValidExtensions():Array<String> {
+		return [".jpg",".png"];
+	}
 }

@@ -11,16 +11,19 @@ import sys.db.Object;
 @:index(createDate)
 class ImageRecord extends Object
 {
-	var id:SId;
-	var name:SString<255>;
-	var pathFromLibrary:SString<255>;
-	var hash:SString<64>;
-	var createDate:Date;
-	var modifiedDate:Date;
+	public var id:SId;
+	public var name:SString<255>;
+	public var pathFromLibrary:SString<255>;
+	public var hash:SString<64>;
+	public var createDate:Date;
+	public var modifiedDate:Date;
+	public var fileSize:Int;
 
 	public function new() 
 	{
 		super();
 	}
+	
+	
 	
 }

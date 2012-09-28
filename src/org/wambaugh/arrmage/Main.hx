@@ -7,6 +7,7 @@ import nme.Lib;
 import org.wambaugh.arrmage.ImageRecord;
 import org.wambaugh.arrmage.Database;
 import org.wambaugh.arrmage.Library;
+import org.wambaugh.arrmage.LibraryScanner;
 import firmament.ui.FDialog;
 
 /**
@@ -42,7 +43,11 @@ class Main extends Sprite
 				Library.setPath(s);
 			});
 		}
-		
+		var scanner = new LibraryScanner();
+		scanner.scan(Library.getPath());
+		var hasher = new LibraryHasher();
+		hasher.hashLibrary();
+		trace('scan complete');
 	}
 	
 	static public function main() 
