@@ -1,6 +1,7 @@
 package org.wambaugh.arrmage;
 import haxe.Md5;
 import sys.io.File;
+import sys.db.Object;
 /**
  * ...
  * @author Jordan Wambaugh
