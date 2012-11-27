@@ -1,0 +1,4 @@
+-main org.wambaugh.arrmage.FlickrSyncr
+-cp src
+-cpp cpp
+-D spod_macro
